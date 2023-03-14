@@ -1,5 +1,5 @@
 from django.contrib import admin
-from todoapp.models import EtatModel, TaskModel, CategoryModel, MyUser
+from todoapp.models import EtatModel, MyUser, TaskModel, CategoryModel
 # Register your models here.
 admin.site.register(EtatModel)
 admin.site.register(TaskModel)

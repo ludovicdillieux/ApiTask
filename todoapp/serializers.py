@@ -4,7 +4,7 @@ from django.contrib.auth.password_validation import validate_password
 from rest_framework import serializers, status
 from rest_framework.response import Response
 from rest_framework.validators import UniqueValidator
-from todoapp.models import EtatModel, MyUser, TaskModel, CategoryModel
+from todoapp.models import CategoryModel, EtatModel, MyUser, TaskModel
 
 # from .serializers import TasksSerializer
 
@@ -63,8 +63,6 @@ class TasksSerializer(serializers.ModelSerializer):
 
 
 class CategoriesSerializer(serializers.ModelSerializer):
-    tasks = TasksSerializer(many=True)
-
     class Meta:
         model = CategoryModel
-        fields = ["id", "value", "tasks"]
+        fields = ["id", "value"]

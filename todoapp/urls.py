@@ -32,7 +32,7 @@ urlpatterns = [
     path("accounts/login", LoginView.as_view(), name="login"),
     path("accounts/logout", LogoutView.as_view(), name="logout"),
     path("accounts/modify-profil", ModifyProfil.as_view(), name="modify"),
-    path("accounts/change-password", ChangePasswordView.as_view(), name="changeçpassword"),
+    path("accounts/change-password", ChangePasswordView.as_view(), name="change-password"),
     path(
         "accounts/token-refresh/",
         jwt_views.TokenRefreshView.as_view(),

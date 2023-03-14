@@ -5,7 +5,7 @@ from datetime import datetime
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from todoapp.models import EtatModel, TaskModel, MyUser, CategoryModel
+from todoapp.models import EtatModel, MyUser, TaskModel, CategoryModel
 from todoapp.serializers import EtatsSerializer, TasksSerializer, CategoriesSerializer
 
 # create a class
