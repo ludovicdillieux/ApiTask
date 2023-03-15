@@ -1,7 +1,7 @@
 import pytest
 from django.test import TestCase
-from todoapp.models import CategoryModel, EtatModel, MyUser, TaskModel
 
+from todoapp.models import CategoryModel, EtatModel, MyUser, TaskModel
 
 # @pytest.mark.django_db
 # def test_register_success(self):
